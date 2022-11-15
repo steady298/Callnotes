@@ -4,3 +4,4 @@ resp=urllib.request.urlopen(req)
 data=resp.read().decode('utf-8')
 
 print(data)
+SERVERPUSHKEY = os.environ["SERVERPUSHKEY"]
