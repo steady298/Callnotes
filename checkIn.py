@@ -3,4 +3,4 @@ req=urllib.request.Request(url)
 resp=urllib.request.urlopen(req)
 data=resp.read().decode('utf-8')
 
-print(data
+print(data)
