@@ -39,4 +39,4 @@ jobs:
       - name: Working
         env:
           SERVERPUSHKEY: ${{ secrets.SERVERPUSHKEY }}
-          run: python checkIn.py
+        run: python checkIn.py
