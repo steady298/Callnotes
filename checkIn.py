@@ -28,14 +28,9 @@ chrome_options.add_argument('--headless')  # 16年之后，chrome给出的解决
 chrome_options.add_argument('--disable-gpu')
 chrome_options.add_argument('--no-sandbox')  # root用户不加这条会无法运行
 
-
 SERVERPUSHKEY = os.environ["SERVERPUSHKEY"]
-
-
 driver = webdriver.Chrome(options=chrome_options)  # 获取浏览器句柄
         url = "https://api2.pushdeer.com/message/push?pushkey=" + SERVERPUSHKEY + "&text=❤️周末到了给父母回个电话吧❤️"
         driver.get(url)
-    
-
 
 
