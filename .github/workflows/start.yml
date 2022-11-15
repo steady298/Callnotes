@@ -25,10 +25,8 @@ jobs:
         with:
           python-version: 3.8
 
-      - name: Prepare
-        # https://github.com/marketplace/actions/setup-chromedriver
-        uses: nanasess/setup-chromedriver@master
-      - name: Launch browser
+
+      - name: Install requests
         run: |
           pip install requests
       - name: Working
